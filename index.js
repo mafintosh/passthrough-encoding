@@ -12,5 +12,6 @@ exports.decode = function (buf, offset, end) {
 }
 
 exports.encodingLength = function (buf) {
+  if (typeof buf === 'string') return Buffer.byteLength(buf)
   return buf.length
 }
