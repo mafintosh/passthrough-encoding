@@ -1,0 +1,24 @@
+{
+  "name": "noop-encoding",
+  "version": "0.0.0",
+  "description": "An encoder that encodes buffers/strings to a buffer and is abstract-encoding compatible",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "standard": "^7.1.0",
+    "tape": "^4.5.1"
+  },
+  "scripts": {
+    "test": "standard && tape test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mafintosh/noop-encoding.git"
+  },
+  "author": "Mathias Buus (@mafintosh)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mafintosh/noop-encoding/issues"
+  },
+  "homepage": "https://github.com/mafintosh/noop-encoding"
+}
