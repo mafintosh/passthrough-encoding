@@ -1,5 +1,6 @@
 exports.encode = function (value, buf, offset) {
   if (typeof value === 'string') value = Buffer(value)
+  exports.encode.bytes = value.length
   if (!buf) return value
   if (!offset) offset = 0
   value.copy(buf, offset)
@@ -7,6 +8,7 @@ exports.encode = function (value, buf, offset) {
 }
 
 exports.decode = function (buf, offset, end) {
+  exports.decode.bytes = (end || buf.length) - (offset || 0)
   if (offset || end) return buf.slice(offset, end || buf.length)
   return buf
 }
