@@ -1,6 +1,6 @@
 {
   "name": "passthrough-encoding",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "An encoder that encodes buffers/strings to a buffer and is abstract-encoding compatible",
   "main": "index.js",
   "dependencies": {},
